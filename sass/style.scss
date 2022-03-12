@@ -1,4 +1,9 @@
-
+$font-logo: Lobster, serif;
+$font-main: "Poppins", sans-serif;
+$font-secondary: "PT Serif", serif;
+$font-color-headings: black;
+$font-color-text: grey;
+$font-color-reverse: white;
 
 
 /* Global */
@@ -10,8 +15,8 @@
 }
 
 body {
-    font-family: Arial;
-    color: red;
+    font-family: $font-main;
+    color: $font-color-text;
 }
 
 .container {
@@ -28,9 +33,10 @@ section {
 
 /* Nav and Splash */
 .logo {
-    font-family: $font-logo;
+    font-family: Lobster;
     font-size: 24px;
     padding: 20px;
+    font-style: italic;
 }
 
 .wrapper-logo-and-nav {
@@ -39,7 +45,7 @@ section {
 }
 
 .wrapper-nav-and-splash {
-    color: $font-color-secondary;
+    color: $font-color-reverse;
     
     height: 100vh;
 }
