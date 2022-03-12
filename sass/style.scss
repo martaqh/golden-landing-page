@@ -1,10 +1,63 @@
+
+
+
+/* Global */
+
 *, *::before, *::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
+body {
+    font-family: Arial;
+    color: red;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+section {
+    padding: 96px 0;
+}
+
+
+/* Nav and Splash */
+.logo {
+    font-family: $font-logo;
+    font-size: 24px;
+    padding: 20px;
+}
+
 .wrapper-logo-and-nav {
     display: flex;
     justify-content: space-between;    
+}
+
+.wrapper-nav-and-splash {
+    color: $font-color-secondary;
+    
+    height: 100vh;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    
+    padding: 20px;
+    
+}
+
+.splash-inner {
+    text-align: center;
 }
