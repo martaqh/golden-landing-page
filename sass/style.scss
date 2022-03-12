@@ -1,0 +1,10 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper-logo-and-nav {
+    display: flex;
+    justify-content: space-between;    
+}
