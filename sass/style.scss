@@ -1,10 +1,11 @@
-$font-logo: Lobster, serif;
+$font-logo: "Lobster", serif;
 $font-main: "Poppins", sans-serif;
 $font-secondary: "PT Serif", serif;
 $font-color-headings: black;
-$font-color-text: grey;
-$font-color-reverse: white;
-$color-logo: yellow;
+$font-color-text: #61615e;
+$font-color-reverse: #fff;
+$color-logo: #f7bc1b;
+$color-portfolio-background: #edece8;
 
 
 /* Global */
@@ -32,6 +33,37 @@ body {
 section {
     padding: 96px 0;
     text-align: center;
+}
+
+.section-title, .card-title {
+    color: $font-color-headings;
+    margin-top: 20px;
+}
+
+.section-subtitle, .card-subtitle {
+    color: $font-color-text;
+    font-family: $font-secondary;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-main;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: $color-logo;
+    background-position: 100% 0;
+    color: $font-color-reverse;
+    text-transform: uppercase;
+    
 }
 
 
@@ -88,13 +120,13 @@ section {
 
 .navigation a {
     text-transform: uppercase;
-    color: white;
+    color: $font-color-reverse;
     text-decoration: none;
 }
 
 .splash-inner {
     text-align: center;
-    color: white;
+    color: $font-color-reverse;
     z-index: 1;
     position: relative;
 }
@@ -102,6 +134,7 @@ section {
 .splash-inner h1 {
     text-transform: uppercase;
     font-size: 40px;
+    margin: 10px;
 }
 
 .splash-inner h2 {
@@ -111,18 +144,37 @@ section {
 
 /* Services */
 
+.services h2 {
+    color: $font-color-headings;
+}
+
 .services i {
     font-size: 30px;
-    background: black;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: $color-logo;
+    border: $color-logo solid 2px;
     border-radius: 50%;
     margin-right: 30px;
     text-align: center;
+    margin: 10px;
 }
 
+
+/* Portfolio */
+
+.portfolio {
+    background: $color-portfolio-background;
+}
+
+
+.card-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
 
 /* Footer */
 
