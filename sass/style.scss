@@ -219,3 +219,18 @@ section {
 .social-media-links a {
     font-size: 0px;   
 }
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper-nav-and-splash {
+        height: 700px;
+    }
+
+    .wrapper-nav-and-splash::after {
+        height: 700px;
+    }
+
+    .social-media-links {
+        margin-top: 30px;
+    }
+}
