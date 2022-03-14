@@ -54,7 +54,7 @@ section {
 
 .section-subtitle {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -85,7 +85,7 @@ section {
 
 .logo {
     font-family: Lobster;
-    font-size: 30px;
+    font-size: 40px;
     font-style: italic;
     color: $color-logo;
     
@@ -149,7 +149,7 @@ section {
 
 .splash-inner h1 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 48px;
     margin: 20px;
 }
 
@@ -208,7 +208,7 @@ section {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    color: white;
+    color: $font-color-reverse;
     border-radius: 50%;
     margin-right: 30px;
     text-align: center;   
