@@ -38,13 +38,27 @@ section {
 .section-title, .card-title {
     color: $font-color-headings;
     margin-top: 20px;
+    padding: 20px;
 }
 
 .section-subtitle, .card-subtitle {
     color: $font-color-text;
     font-family: $font-secondary;
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 36px;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 20px;
 }
 
 
@@ -68,9 +82,10 @@ section {
 
 
 /* Nav and Splash */
+
 .logo {
     font-family: Lobster;
-    font-size: 24px;
+    font-size: 30px;
     font-style: italic;
     color: $color-logo;
     
@@ -85,9 +100,11 @@ section {
 }
 
 .wrapper-nav-and-splash {
+    object-fit: cover;
     color: $font-color-reverse;
     background: url(https://i.postimg.cc/jj6f6LDD/pexels-polina-kovaleva-5827823.jpg);
     height: 100vh;
+    width: 100%;
     z-index: -1;
 }
 
@@ -113,7 +130,6 @@ section {
 }
 
 .navigation li {
-    
     padding: 20px;
     
 }
@@ -134,7 +150,7 @@ section {
 .splash-inner h1 {
     text-transform: uppercase;
     font-size: 40px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .splash-inner h2 {
@@ -161,6 +177,10 @@ section {
     margin: 10px;
 }
 
+.services .card-text {
+    font-family: $font-secondary;
+}
+
 
 /* Portfolio */
 
@@ -179,22 +199,19 @@ section {
 /* Footer */
 
 .social-media-links li {
-    display: inline;
-    
-    
+    display: inline;   
 }
 
 .social-media-links i {
-    font-size: 30px;
+    font-size: 20px;
     background: black;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     color: white;
     border-radius: 50%;
     margin-right: 30px;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .social-media-links a {
