@@ -100,12 +100,14 @@ section {
 }
 
 .wrapper-nav-and-splash {
-    object-fit: cover;
     color: $font-color-reverse;
     background: url(https://i.postimg.cc/jj6f6LDD/pexels-polina-kovaleva-5827823.jpg);
     height: 100vh;
     width: 100%;
     z-index: -1;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .wrapper-nav-and-splash::after {
