@@ -1,17 +1,118 @@
-/* Error: Undefined variable.
- *    ,
- * 48 |     color: $font-color-secondary;
- *    |            ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\style.scss 48:12  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 48 \2502      color: $font-color-secondary;\d\a    \2502             ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\style.scss 48:12  root stylesheet";
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: grey;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+section {
+  padding: 96px 0;
+  text-align: center;
+}
+
+/* Nav and Splash */
+.logo {
+  font-family: Lobster;
+  font-size: 24px;
+  font-style: italic;
+  color: yellow;
+}
+
+.wrapper-logo-and-nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.wrapper-nav-and-splash {
+  color: white;
+  background: url(https://i.postimg.cc/jj6f6LDD/pexels-polina-kovaleva-5827823.jpg);
+  height: 100vh;
+  z-index: -1;
+}
+
+.wrapper-nav-and-splash::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.6;
+  background-color: black;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation li {
+  padding: 20px;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.splash-inner {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.splash-inner h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.splash-inner h2 {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+}
+
+/* Footer */
+.social-media-links li {
+  display: inline;
+}
+
+.social-media-links i {
+  font-size: 30px;
+  background: black;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  border-radius: 50%;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.social-media-links a {
+  font-size: 0px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTQSxXQUFBO0FBRUE7RUFDQyxzQkFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0FDVEQ7O0FEWUE7RUFDSSxTQUFBO0VBQ0EsVUFBQTtFQUNBLGtDQW5CUTtFQW9CUixXQWpCYztBQ1FsQjs7QURZQTtFQUNJLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQ1RKOztBRFlBO0VBQ0ksZUFBQTtFQUNBLGtCQUFBO0FDVEo7O0FEYUEsbUJBQUE7QUFDQTtFQUNJLG9CQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFwQ1M7QUMwQmI7O0FEY0E7RUFDSSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxVQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0FDWEo7O0FEY0E7RUFDSSxZQWxEaUI7RUFtRGpCLGlGQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7QUNYSjs7QURjQTtFQUNJLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0VBQ0EsVUFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0FDWEo7O0FEZUE7RUFDSSxVQUFBO0VBQ0EsU0FBQTtFQUNBLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7QUNaSjs7QURlQTtFQUVJLGFBQUE7QUNiSjs7QURpQkE7RUFDSSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtBQ2RKOztBRGlCQTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxrQkFBQTtBQ2RKOztBRGlCQTtFQUNJLHlCQUFBO0VBQ0EsZUFBQTtBQ2RKOztBRGlCQTtFQUNJLDhCQXpHYTtFQTBHYixrQkFBQTtBQ2RKOztBRGtCQSxXQUFBO0FBRUE7RUFDSSxlQUFBO0FDaEJKOztBRHFCQTtFQUNJLGVBQUE7RUFDQSxpQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FDbEJKOztBRHNCQTtFQUNJLGNBQUE7QUNuQkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
